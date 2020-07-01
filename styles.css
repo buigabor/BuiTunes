@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  font-family: "PT Sans", sans-serif;
+  background-color: #252529;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: white;
+  width: 100%;
+}
+
+p {
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+.section {
+  text-align: center;
+}
+
+.button-text {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  width: 100%;
+  padding: 1em;
+  margin: -2em;
+}
+
+/* Navbar */
+
+nav {
+  height: 40px;
+  width: 100%;
+  background-color: #333;
+  color: #eee;
+  position: fixed;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  float: left;
+}
+nav a {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+  color: #eee;
+  text-decoration: none;
+}
+nav li:hover {
+  background-color: #444;
+}
+nav a#openup {
+  display: none;
+}
+
+/* Showcase & Headers */
+
+#showcase {
+  margin: 0;
+  padding: 0;
+  background: url("img/showcase.jpg") no-repeat center/cover;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+#showcase h1 {
+  margin: 0;
+  font-size: 3.5rem;
+}
+
+.section-head {
+  font-size: 2rem;
+}
+
+.lead {
+  font-size: 1.3rem;
+}
+
+.showcase-container {
+  padding-top: 12rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Music */
+
+.fas {
+  font-size: 2.5rem;
+}
+
+.container {
+  padding-top: 4rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.music-btn {
+  width: 15rem;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #d60d0d;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  margin: 2rem;
+}
+
+.music-btn:hover {
+  background-color: #e30e0e;
+}
+
+/* Video */
+
+#video {
+  background-color: #ededed;
+  color: #4a4a4a;
+}
+
+.video-btn {
+  background-color: royalblue;
+  width: 10rem;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.video-btn:hover {
+  background-color: rgb(28, 81, 238);
+}
+
+/* Entertainment */
+
+#entertainment {
+  background: url("img/section-bg.jpg") no-repeat bottom/cover;
+  height: 80vh;
+  width: 100%;
+}
+
+.entertainment-container {
+  padding-top: 9rem;
+}
+
+/* Gift Cards */
+
+#gift-cards {
+  background-color: #ededed;
+  color: #4a4a4a;
+  padding-top: 2rem;
+}
+
+#gift-cards p {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  margin: 2rem 0;
+}
+
+#gift-cards h3 {
+  font-size: 1.5rem;
+}
+
+.gift-container {
+  float: right;
+  text-align: left;
+  width: 50%;
+  padding-right: 4rem;
+}
+
+.cards {
+  width: 40%;
+}
+
+.fa-chevron-right {
+  font-size: 1rem;
+}
+
+#gift-cards a {
+  color: blue;
+  text-decoration: none;
+}
+
+#gift-cards a:hover {
+  color: #666666;
+}
+
+/* Footer */
+
+#footer .footer-cols {
+  display: grid;
+  grid-gap: 1.2rem;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: left;
+  font-size: 1rem;
+}
+
+#footer .footer-cols ul {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+#footer .footer-cols ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+#footer .footer-cols ul li:first-child {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  border-bottom: 2px solid #444;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin: 2.5rem;
+}
+
+@media screen and (max-width: 780px) {
+
+
+
+}
+
+@media screen and (max-width: 1080px) {
+  h1 {
+    font-size: 2.8em;
+  }
+
+  /* Navbar */
+
+  nav {
+    height: auto;
+    border-bottom: 0;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+  }
+  nav li {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+  nav a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+    background: #333;
+    border-bottom: 1px solid #555;
+  }
+  nav a:hover {
+    background: #444;
+  }
+  nav a#openup:after {
+    content: "|||";
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Safari and Chrome */
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+  }
+  nav a#openup {
+    display: block;
+    background-color: #333;
+    width: 100%;
+    position: relative;
+  }
+
+  .cf:before,
+  .cf:after {
+    content: "";
+    display: table;
+  }
+
+  .cf:after {
+    clear: both;
+  }
+
+  .cf {
+    zoom: 1;
+  }
+
+  /* Showcase */
+
+  .hide-on-small {
+    display: none;
+  }
+
+  #showcase {
+    height: 80vh;
+  }
+
+  #showcase h1 {
+    font-size: 2.5rem;
+  }
+
+  #showcase h2 {
+    font-size: 1.5rem;
+  }
+
+  .showcase-header {
+    padding-top: 8.5rem;
+  }
+
+  #entertainment {
+    height: 140vh;
+    width: 100%;
+  }
+
+  .entertainment-container {
+    padding-top: 5rem;
+    width: 90%;
+  }
+
+  #gift-cards {
+    background-color: #ededed;
+    color: #4a4a4a;
+    padding-top: 2rem;
+  }
+
+  #gift-cards p {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  #gift-cards h3 {
+    font-size: 1.5rem;
+  }
+
+  .gift-container {
+    float: none;
+    text-align: center;
+    width: 80%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .cards {
+    width: 80%;
+    margin: 0 2rem;
+  }
+
+  #footer {
+    display: none;
+  }
+}
+
+/* For IE 6/7 (trigger hasLayout) */
